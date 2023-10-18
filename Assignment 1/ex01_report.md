@@ -146,15 +146,7 @@ To see if the accuracy will decrease in other conditions, we choose two language
 
 There is still little influence on accuracy when length is not very small. When the length reduces to 10, there is an obvious drop in accuracy. 
 
-
-
-
-
 To summarize it, the ablation barely affect the performance of the classifier.
-
-
-
-
 
 ## Part 2 - Your first Neural Network
 
@@ -168,8 +160,6 @@ To summarize it, the ablation barely affect the performance of the classifier.
 >    
 >    (All have been done in notebook)
 
-
-
 ### Improve the Neural Network
 
 First, we use the default hyperparameters. After 500 epochs, the validation accuracy is still under 80%. The result is as followed:
@@ -179,8 +169,6 @@ Training accuracy: 0.8454807692307692
 Testing accuracy: 0.24826923076923077
 
 The difference between training accuracy and testing accuracy is quite large, which means that there may be an overfitting in the training data.
-
-
 
 To improve the model, we use the GridSearchCV to find the best parameters.
 
@@ -205,8 +193,6 @@ The best parameters are:
 >  'NN__module__num_units': 300,
 > 
 >  'NN__optimizer__lr': 0.1
-
-
 
 Using the params we got from GridSearchCV, we explore if increasing the number of features will make the accuracy higher. The parameter is both max_features for CV and in_features for NN (they should be the same). 
 
