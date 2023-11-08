@@ -2,5 +2,6 @@
     "editor.fontSize": 12,
     "markdown.preview.fontSize": 12,
     "notebook.markup.fontSize": 14,
-    "notebook.output.textLineLimit": 30
+    "notebook.output.textLineLimit": 30,
+    "python.analysis.typeCheckingMode": "off"
 }
